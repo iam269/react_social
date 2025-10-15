@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# React Social - Facebook Authentication Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive Facebook authentication application built with React. This app helps users authenticate using the Facebook SDK and view their profile information.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Facebook Authentication**: Easy authentication with Facebook account
+- **User Information Display**: View name, email, and profile picture after authentication
+- **State Management**: Real-time authentication state management
+- **Modern Interface**: Clean and intuitive design
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19
+- react-facebook-login for Facebook integration
+- Axios for API calls (if needed)
+- Create React App for build setup
+- Facebook SDK for authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
 
-### `npm test`
+The application is functional and can be run locally at:
+- **Local Development**: http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Repository
 
-### `npm run build`
+- **Local Directory**: c:/work/Projects code/web development/react_social
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have Node.js and npm installed on your machine.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository or navigate to the directory:
+```bash
+cd "c:/work/Projects code/web development/react_social"
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install the Facebook login package:
+```bash
+npm install react-facebook-login --legacy-peer-deps
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
+```bash
+npm start
+```
 
-## Learn More
+The app will open in your browser at [http://localhost:3000](http://localhost:3000).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Build for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+### Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You can deploy the application to any static hosting platform, such as GitHub Pages, Vercel, or Netlify.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Authentication**: Click the Facebook login button
+2. **View Profile**: After authentication, see your profile information
+3. **Logout**: You can logout to test again
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+src/
+├── components/
+│   └── Facebook.js              # Facebook authentication component
+├── App.js                       # Main app component
+├── App.css                      # Global styles
+└── index.js                     # App entry point
+```
 
-### Advanced Configuration
+## Facebook App Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To work fully, you need to configure a Facebook app:
 
-### Deployment
+1. Go to [Facebook Developers](https://developers.facebook.com/)
+2. Create a new app
+3. Get the App ID
+4. Replace `appId` in `src/components/Facebook.js` with your App ID
+5. Configure the localhost:3000 domain in the app settings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ using React
