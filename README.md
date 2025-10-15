@@ -1,30 +1,33 @@
-# React Social - Facebook Authentication Example
+# PixaBay Image Finder
 
-A modern, responsive Facebook authentication application built with React. This app helps users authenticate using the Facebook SDK and view their profile information.
+A modern, responsive image search application built with React. This app helps users discover and explore high-quality images using the Pixabay API.
 
 ## Features
 
-- **Facebook Authentication**: Easy authentication with Facebook account
-- **User Information Display**: View name, email, and profile picture after authentication
-- **State Management**: Real-time authentication state management
-- **Modern Interface**: Clean and intuitive design
+- **Image Search**: Easily search for images by entering any keyword or phrase
+- **Customizable Results**: Select the number of images to display per page (5, 10, 15, 30, or 50)
+- **Real-time Fetching**: Images are fetched dynamically using Axios for smooth performance
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Safe Search**: All results are filtered for safe content
+- **Modern UI**: Clean, intuitive interface built with Material UI
 
 ## Technologies Used
 
-- React 19
-- react-facebook-login for Facebook integration
-- Axios for API calls (if needed)
+- React
+- Material UI for components
+- Axios for API calls
+- Pixabay API for image data
 - Create React App for build setup
-- Facebook SDK for authentication
+- GitHub Pages for deployment
 
 ## Live Demo
 
-The application is functional and can be run locally at:
-- **Local Development**: http://localhost:3000
+The application is deployed and can be viewed at:
+- **GitHub Pages**: https://iam269.github.io/pixabay_image_finder-master
 
 ## Repository
 
-- **Local Directory**: c:/work/Projects code/web development/react_social
+- **GitHub Repository**: https://github.com/iam269/pixabay_image_finder-master
 
 ## Getting Started
 
@@ -34,9 +37,10 @@ Make sure you have Node.js and npm installed on your machine.
 
 ### Installation
 
-1. Clone the repository or navigate to the directory:
+1. Clone the repository:
 ```bash
-cd "c:/work/Projects code/web development/react_social"
+git clone https://github.com/iam269/pixabay_image_finder-master.git
+cd pixabay_image_finder-master
 ```
 
 2. Install dependencies:
@@ -44,12 +48,7 @@ cd "c:/work/Projects code/web development/react_social"
 npm install
 ```
 
-3. Install the Facebook login package:
-```bash
-npm install react-facebook-login --legacy-peer-deps
-```
-
-4. Start the development server:
+3. Start the development server:
 ```bash
 npm start
 ```
@@ -62,36 +61,33 @@ The app will open in your browser at [http://localhost:3000](http://localhost:30
 npm run build
 ```
 
-### Deploy
+### Deploy to GitHub Pages
 
-You can deploy the application to any static hosting platform, such as GitHub Pages, Vercel, or Netlify.
+```bash
+npm run deploy
+```
 
 ## Usage
 
-1. **Authentication**: Click the Facebook login button
-2. **View Profile**: After authentication, see your profile information
-3. **Logout**: You can logout to test again
+1. **Search Images**: Enter a search term in the text field
+2. **Select Amount**: Choose how many images to display using the dropdown
+3. **View Results**: Browse through the fetched images in the results section
 
 ## Project Structure
 
 ```
 src/
 ├── components/
-│   └── Facebook.js              # Facebook authentication component
-├── App.js                       # Main app component
-├── App.css                      # Global styles
-└── index.js                     # App entry point
+│   ├── image-results/
+│   │   └── ImageResults.js    # Displays search results
+│   ├── navbar/
+│   │   └── NavBar.js          # Navigation component
+│   └── search/
+│       └── Search.js          # Main search functionality
+├── App.js                     # Main app component
+├── App.css                    # Global styles
+└── index.js                   # App entry point
 ```
-
-## Facebook App Configuration
-
-To work fully, you need to configure a Facebook app:
-
-1. Go to [Facebook Developers](https://developers.facebook.com/)
-2. Create a new app
-3. Get the App ID
-4. Replace `appId` in `src/components/Facebook.js` with your App ID
-5. Configure the localhost:3000 domain in the app settings
 
 ## Contributing
 
